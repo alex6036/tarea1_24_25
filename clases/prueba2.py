@@ -28,6 +28,14 @@ class Punto:
         vector_y = otro_punto.y - self.y
         return Punto(vector_x, vector_y)
     
+    def distancia(self, otro_punto):
+        # Calcula la distancia euclidiana entre los dos puntos
+        dx = otro_punto.x - self.x
+        dy = otro_punto.y - self.y
+        distancia = math.sqrt(dx**2 + dy**2)
+        print(f"La distancia entre {self} y {otro_punto} es: {distancia}")
+        return distancia
+
 if __name__ == "__main__":
     p1 = Punto(3, 4)
     p2 = Punto(1, 2)
@@ -45,3 +53,6 @@ if __name__ == "__main__":
     print(f"Vector resultante: {v2}")
 
     print(f"\n{v2}: {v2.cuadrante()}")
+
+    p1.distancia(v2)
+   
