@@ -46,7 +46,7 @@ distancias = {
     "C": dist_C_origen
 }
 punto_mas_lejano = max(distancias, key=distancias.get)
-print(f"\nEl punto más lejano del origen es {punto_mas_lejano} con una distancia de {distancias[punto_mas_lejano]}")
+print(f"\nEl punto más lejano del origen es {punto_mas_lejano} con una distancia de {abs(distancias[punto_mas_lejano])}")
 
 # Crear un rectángulo con los puntos A y B
 print("\nCreando rectángulo con puntos A y B:")
