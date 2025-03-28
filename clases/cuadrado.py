@@ -20,21 +20,32 @@ class Rectangulo:
         print(f"La altura del rectángulo es: {longitud_altura}")
         return longitud_altura
     
+    def area(self):
+        # Calcula el área como base * altura
+        b = self.base()
+        h = self.altura()
+        area_rectangulo = b * h
+        print(f"El área del rectángulo es: {area_rectangulo}")
+        return area_rectangulo
+    
 if __name__ == "__main__":
     # Crear rectángulo con valores específicos
     rect1 = Rectangulo(1, 1, 4, 3)
     print(rect1)
     rect1.base()
     rect1.altura()
+    rect1.area()
     
     # Crear rectángulo con solo punto inicial (final será (0,0))
     rect2 = Rectangulo(2, 2)
     print(rect2)
     rect2.base()
     rect2.altura()
+    rect2.area()
     
     # Crear rectángulo sin parámetros (ambos puntos en (0,0))
     rect3 = Rectangulo()
     print(rect3)
     rect3.base()
     rect3.altura()
+    rect3.area()
