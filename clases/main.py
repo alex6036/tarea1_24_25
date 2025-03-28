@@ -29,15 +29,15 @@ print(f"Vector BA (desde {B} hasta {A}): {vector_BA}")
 
 # Consultar la distancia entre A y B, y B y A
 print("\nDistancias:")
-dist_AB = A.distancia(B)
-dist_BA = B.distancia(A)
+dist_AB = round(A.distancia(B))
+dist_BA = round(B.distancia(A))
 
 # Determinar la distancia de A, B y C al origen (0,0)
 origen = Punto(0, 0)
 print("\nDistancias al origen (0,0):")
-dist_A_origen = A.distancia(origen)
-dist_B_origen = B.distancia(origen)
-dist_C_origen = C.distancia(origen)
+dist_A_origen = round(A.distancia(origen))
+dist_B_origen = round(B.distancia(origen))
+dist_C_origen = round(C.distancia(origen))
 
 # Comparar las distancias para encontrar el punto más lejano
 distancias = {
@@ -46,7 +46,7 @@ distancias = {
     "C": dist_C_origen
 }
 punto_mas_lejano = max(distancias, key=distancias.get)
-print(f"\nEl punto más lejano del origen es {punto_mas_lejano} con una distancia de {abs(distancias[punto_mas_lejano])}")
+print(f"\nEl punto más lejano del origen es {punto_mas_lejano} con una distancia de {round(distancias[punto_mas_lejano])}")
 
 # Crear un rectángulo con los puntos A y B
 print("\nCreando rectángulo con puntos A y B:")
