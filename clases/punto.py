@@ -36,23 +36,3 @@ class Punto:
         print(f"La distancia entre {self} y {otro_punto} es: {distancia}")
         return distancia
 
-if __name__ == "__main__":
-    p1 = Punto(3, 4)
-    p2 = Punto(1, 2)
-    v = p1.vector(p2)
-    print(f"Punto inicial: {p1}")
-    print(f"Punto final: {p2}")
-    print(f"Vector resultante: {v}")
-    
-    # Otro ejemplo
-    p3 = Punto(0, 0)
-    p4 = Punto(5, -3)
-    v2 = p3.vector(p4)
-    print(f"\nPunto inicial: {p3}")
-    print(f"Punto final: {p4}")
-    print(f"Vector resultante: {v2}")
-
-    print(f"\n{v2}: {v2.cuadrante()}")
-
-    p1.distancia(v2)
-   

@@ -27,10 +27,5 @@ class Rectangulo:
         area_rectangulo = b * h
         print(f"El área del rectángulo es: {area_rectangulo}")
         return area_rectangulo
-    
-if __name__ == "__main__":
-    # Crear rectángulo con valores específicos
-    rect1 = Rectangulo(1, 1, 4, 3)
-    print(rect1)
-    rect1.area()
+
     
